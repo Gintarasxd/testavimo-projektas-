@@ -1,0 +1,187 @@
+//
+$spalva1: red;
+$Spalva2: blue;
+//
+
+body {
+     background-color: $spalva1;
+    color: $Spalva2;
+}
+//
+
+$spalva1: rgb(10, 219, 10);
+$Spalva2: rgb(112, 12, 12);
+
+@mixin dezes-seselis($dydis, $spalva, $blur, $Spalva) {
+    -webkit-box-shadow: $dydis, $spalva, $blur, $Spalva;
+    -moz-box-shadow: $dydis, $spalva, $blur, $Spalva;
+    box-shadow: $dydis, $spalva, $blur, $Spalva;
+
+}
+
+.button {
+    @include dezes-seselis(20px, 5px, 5px, $spalva1 );
+    background-color: $spalva1;
+    color: orange;
+    padding: 20px 10px;
+    border: flex;
+    border-radius: 10px;
+    ;
+}
+
+
+
+$spalva3: #ff6a3e;
+$spalva4: #d80c9b;
+
+.nav {
+    background-color: $spalva3;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 50px;
+
+            a {
+                text-decoration: none;
+                color: rgb(3, 233, 107);
+
+                &:hover {
+                    color: $spalva4;
+                    
+                }
+            }
+        }
+    }
+}
+//
+
+//
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #e9e9e9;
+  }
+  
+  td {
+    text-align: center;
+  }
+  //
+
+  // Header styling
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-left: 20px;
+        
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1em;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #ddd;
+          }
+        }
+      }
+    }
+  }
+  
+  // Hero section
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+  
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+  
+    .read-more {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
+  // Services section
+  .services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #fff;
+  
+    .service {
+      text-align: center;
+      width: 200px;
+  
+      img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+      }
+  
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1em;
+        color: #666;
+      }
+    }
+  }
+  
