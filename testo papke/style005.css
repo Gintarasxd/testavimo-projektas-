@@ -1,0 +1,64 @@
+/* Base reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 10px; /* Padding around body */
+}
+
+/* Main container styling */
+.main {
+    max-width: 320px; /* Maximum width for mobile */
+    margin: 0 auto;   /* Center the main section */
+    background-color: white; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden; /* Clip any overflowing elements */
+}
+
+/* Header styling */
+.header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px; /* Padding inside header */
+    text-align: center; /* Center text */
+}
+
+/* Content area styling */
+.content {
+    padding: 15px; /* Padding inside content area */
+    line-height: 1.5; /* Improve text readability */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #ddd; /* Light gray background */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 320px) {
+    body {
+        padding: 5px; /* Reduce body padding on smaller screens */
+    }
+
+    .main {
+        padding: 0; /* Remove padding from main section */
+    }
+
+    .header, .footer {
+        padding: 10px; /* Adjust header and footer padding */
+    }
+
+    .content {
+        padding: 10px; /* Adjust content padding */
+    }
+}
